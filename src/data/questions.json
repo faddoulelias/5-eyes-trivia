@@ -1,0 +1,854 @@
+{
+  "categories": [
+    {
+      "id": "geo",
+      "name": "Geog\u00adra\u00adphy",
+      "icon": "🌍",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "What is the capital of Japan?", "a": "Tokyo" },
+          { "q": "Which is the largest ocean on Earth?", "a": "The Pacific" },
+          { "q": "Which European country is shaped like a boot?", "a": "Italy" },
+          { "q": "What is the largest country in the world by area?", "a": "Russia" },
+          { "q": "What is the capital of Egypt?", "a": "Cairo" },
+          { "q": "On which continent is the Sahara Desert?", "a": "Africa" },
+          { "q": "Which country is home to kangaroos?", "a": "Australia" },
+          { "q": "What is the capital of Spain?", "a": "Madrid" },
+          { "q": "On which continent is Brazil?", "a": "South America" },
+          { "q": "What is the capital of Germany?", "a": "Berlin" },
+          { "q": "Which river flows through London?", "a": "The Thames" },
+          { "q": "What is the capital of the United Kingdom?", "a": "London" }
+        ],
+        "400": [
+          { "q": "What is the capital of Australia?", "a": "Canberra" },
+          { "q": "What is the capital of Canada?", "a": "Ottawa" },
+          { "q": "What is the capital of Turkey?", "a": "Ankara" },
+          { "q": "In which country is the city of Marrakech?", "a": "Morocco" },
+          { "q": "Mount Everest sits on the border between Nepal and which country?", "a": "China (Tibet)" },
+          { "q": "What is the smallest country in the world?", "a": "Vatican City" },
+          { "q": "Which narrow strait separates Spain from Morocco?", "a": "The Strait of Gibraltar" },
+          { "q": "Which African country has the largest population?", "a": "Nigeria" },
+          { "q": "Which two countries share the longest land border in the world?", "a": "Canada and the United States" },
+          { "q": "What is the capital of Switzerland?", "a": "Bern" },
+          { "q": "Which country has the largest population in the world?", "a": "India" },
+          { "q": "What is the longest mountain range in the world?", "a": "The Andes" }
+        ],
+        "600": [
+          { "q": "What is the capital of Kazakhstan?", "a": "Astana" },
+          { "q": "Which African country was once known as Abyssinia?", "a": "Ethiopia" },
+          { "q": "What is the deepest lake in the world?", "a": "Lake Baikal" },
+          { "q": "Which country is completely surrounded by South Africa?", "a": "Lesotho" },
+          { "q": "The lowest point on dry land is the shore of which body of water?", "a": "The Dead Sea" },
+          { "q": "What is the capital of New Zealand?", "a": "Wellington" },
+          { "q": "In which country is the ancient city of Timbuktu?", "a": "Mali" },
+          { "q": "Which desert stretches across southern Mongolia and northern China?", "a": "The Gobi" },
+          { "q": "Which river flows through Baghdad?", "a": "The Tigris" },
+          { "q": "Which mountain range is the traditional border between Europe and Asia?", "a": "The Urals" },
+          { "q": "What is the capital of Myanmar?", "a": "Naypyidaw" },
+          { "q": "Counting cold deserts, what is the largest desert on Earth?", "a": "Antarctica" }
+        ]
+      }
+    },
+    {
+      "id": "flags",
+      "name": "Flags",
+      "icon": "🚩",
+      "kind": "picture",
+      "levels": {
+        "200": [
+          { "q": "Whose flag is this?", "a": "Japan", "img": "flag-japan" },
+          { "q": "Whose flag is this?", "a": "France", "img": "flag-france" },
+          { "q": "Whose flag is this?", "a": "Brazil", "img": "flag-brazil" },
+          { "q": "Whose flag is this?", "a": "Canada", "img": "flag-canada" },
+          { "q": "Whose flag is this?", "a": "The United States", "img": "flag-usa" },
+          { "q": "Whose flag is this?", "a": "The United Kingdom", "img": "flag-uk" },
+          { "q": "Whose flag is this?", "a": "Italy", "img": "flag-italy" },
+          { "q": "Whose flag is this?", "a": "Germany", "img": "flag-germany" },
+          { "q": "Whose flag is this?", "a": "China", "img": "flag-china" },
+          { "q": "Whose flag is this?", "a": "Spain", "img": "flag-spain" },
+          { "q": "Whose flag is this?", "a": "Switzerland", "img": "flag-switzerland" },
+          { "q": "Whose flag is this?", "a": "The Netherlands", "img": "flag-netherlands" }
+        ],
+        "400": [
+          { "q": "Whose flag is this?", "a": "Mexico", "img": "flag-mexico" },
+          { "q": "Whose flag is this?", "a": "Turkey", "img": "flag-turkey" },
+          { "q": "Whose flag is this?", "a": "Greece", "img": "flag-greece" },
+          { "q": "Whose flag is this?", "a": "Sweden", "img": "flag-sweden" },
+          { "q": "Whose flag is this?", "a": "South Korea", "img": "flag-south-korea" },
+          { "q": "Whose flag is this?", "a": "Argentina", "img": "flag-argentina" },
+          { "q": "Whose flag is this?", "a": "Portugal", "img": "flag-portugal" },
+          { "q": "Whose flag is this?", "a": "Egypt", "img": "flag-egypt" },
+          { "q": "Whose flag is this?", "a": "India", "img": "flag-india" },
+          { "q": "Whose flag is this?", "a": "Australia", "img": "flag-australia" },
+          { "q": "Whose flag is this?", "a": "Ireland", "img": "flag-ireland" },
+          { "q": "Whose flag is this?", "a": "Jamaica", "img": "flag-jamaica" }
+        ],
+        "600": [
+          { "q": "Whose flag is this?", "a": "Bhutan", "img": "flag-bhutan" },
+          { "q": "Whose flag is this?", "a": "Nepal", "img": "flag-nepal" },
+          { "q": "Whose flag is this?", "a": "Kazakhstan", "img": "flag-kazakhstan" },
+          { "q": "Whose flag is this?", "a": "Sri Lanka", "img": "flag-sri-lanka" },
+          { "q": "Whose flag is this?", "a": "Mozambique", "img": "flag-mozambique" },
+          { "q": "Whose flag is this?", "a": "Cyprus", "img": "flag-cyprus" },
+          { "q": "Whose flag is this?", "a": "Kyrgyzstan", "img": "flag-kyrgyzstan" },
+          { "q": "Whose flag is this?", "a": "Brunei", "img": "flag-brunei" },
+          { "q": "Whose flag is this?", "a": "Seychelles", "img": "flag-seychelles" },
+          { "q": "Whose flag is this?", "a": "Mongolia", "img": "flag-mongolia" },
+          { "q": "Whose flag is this?", "a": "Malaysia", "img": "flag-malaysia" },
+          { "q": "Whose flag is this?", "a": "Albania", "img": "flag-albania" }
+        ]
+      }
+    },
+    {
+      "id": "places",
+      "name": "Famous Places",
+      "icon": "📸",
+      "kind": "picture",
+      "levels": {
+        "200": [
+          { "q": "Name this landmark", "a": "The Eiffel Tower, Paris", "img": "place-eiffel" },
+          { "q": "Name this landmark", "a": "The Statue of Liberty, New York", "img": "place-liberty" },
+          { "q": "Name this landmark", "a": "The Great Wall of China", "img": "place-great-wall" },
+          { "q": "Name this landmark", "a": "The Colosseum, Rome", "img": "place-colosseum" },
+          { "q": "Name this landmark", "a": "The Taj Mahal, India", "img": "place-taj-mahal" },
+          { "q": "Name this landmark", "a": "The Great Pyramid of Giza, Egypt", "img": "place-pyramids" },
+          { "q": "Name this landmark", "a": "Big Ben, London", "img": "place-big-ben" },
+          { "q": "Name this landmark", "a": "Sydney Opera House", "img": "place-sydney-opera" },
+          { "q": "Name this landmark", "a": "The Leaning Tower of Pisa", "img": "place-pisa" },
+          { "q": "Name this bridge", "a": "Tower Bridge, London", "img": "place-tower-bridge" },
+          { "q": "Name this place", "a": "Niagara Falls", "img": "place-niagara" },
+          { "q": "Name this mountain", "a": "Mount Fuji, Japan", "img": "place-fuji" }
+        ],
+        "400": [
+          { "q": "Name this landmark", "a": "Christ the Redeemer, Rio de Janeiro", "img": "place-christ-redeemer" },
+          { "q": "Name this place", "a": "Machu Picchu, Peru", "img": "place-machu-picchu" },
+          { "q": "Name this building", "a": "Burj Khalifa, Dubai", "img": "place-burj-khalifa" },
+          { "q": "Name this building", "a": "The Sagrada Família, Barcelona", "img": "place-sagrada-familia" },
+          { "q": "Name this place", "a": "Stonehenge, England", "img": "place-stonehenge" },
+          { "q": "Name this landmark", "a": "The Golden Gate Bridge, San Francisco", "img": "place-golden-gate" },
+          { "q": "Name this place", "a": "The Acropolis, Athens", "img": "place-acropolis" },
+          { "q": "Name this landmark", "a": "Mount Rushmore, USA", "img": "place-rushmore" },
+          { "q": "Name these statues", "a": "The Moai of Easter Island", "img": "place-moai" },
+          { "q": "Name this landmark", "a": "The Brandenburg Gate, Berlin", "img": "place-brandenburg" },
+          { "q": "Name this place", "a": "The Forbidden City, Beijing", "img": "place-forbidden-city" },
+          { "q": "Name this rock", "a": "Uluru (Ayers Rock), Australia", "img": "place-uluru" }
+        ],
+        "600": [
+          { "q": "Name this place", "a": "Angkor Wat, Cambodia", "img": "place-angkor-wat" },
+          { "q": "Name this castle", "a": "Neuschwanstein Castle, Germany", "img": "place-neuschwanstein" },
+          { "q": "Name this building", "a": "Hagia Sophia, Istanbul", "img": "place-hagia-sophia" },
+          { "q": "Name this place", "a": "Chichén Itzá, Mexico", "img": "place-chichen-itza" },
+          { "q": "Name this place", "a": "The Alhambra, Granada", "img": "place-alhambra" },
+          { "q": "Name this place", "a": "Petra, Jordan", "img": "place-petra" },
+          { "q": "Name this place", "a": "Mont-Saint-Michel, France", "img": "place-mont-saint-michel" },
+          { "q": "Name this place", "a": "Meteora, Greece", "img": "place-meteora" },
+          { "q": "Name this palace", "a": "The Potala Palace, Lhasa", "img": "place-potala" },
+          { "q": "Name this temple", "a": "Borobudur, Indonesia", "img": "place-borobudur" },
+          { "q": "Name this temple", "a": "Kinkaku-ji (the Golden Pavilion), Kyoto", "img": "place-kinkakuji" },
+          { "q": "Name this church", "a": "Hallgrímskirkja, Reykjavík", "img": "place-hallgrimskirkja" }
+        ]
+      }
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "icon": "🏛️",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "Who was the first person to walk on the Moon?", "a": "Neil Armstrong" },
+          { "q": "Which ancient civilisation built the pyramids of Giza?", "a": "The ancient Egyptians" },
+          { "q": "Which famous wall came down in 1989?", "a": "The Berlin Wall" },
+          { "q": "Which \"unsinkable\" ship sank on its first voyage in 1912?", "a": "The Titanic" },
+          { "q": "Who was the first President of the United States?", "a": "George Washington" },
+          { "q": "Which Roman leader was stabbed on the Ides of March?", "a": "Julius Caesar" },
+          { "q": "Which explorer crossed the Atlantic to the Americas in 1492?", "a": "Christopher Columbus" },
+          { "q": "Which queen of Egypt was famously allied with Mark Antony?", "a": "Cleopatra" },
+          { "q": "Who painted the Mona Lisa?", "a": "Leonardo da Vinci" },
+          { "q": "Which country did Napoleon rule as emperor?", "a": "France" },
+          { "q": "Who was Britain's prime minister for most of World War II?", "a": "Winston Churchill" },
+          { "q": "What did the Wright brothers fly for the first time in 1903?", "a": "A powered aeroplane" }
+        ],
+        "400": [
+          { "q": "In which year did World War II end?", "a": "1945" },
+          { "q": "Which empire was ruled by Suleiman the Magnificent?", "a": "The Ottoman Empire" },
+          { "q": "Who painted the ceiling of the Sistine Chapel?", "a": "Michelangelo" },
+          { "q": "Which country gave the Statue of Liberty to the United States?", "a": "France" },
+          { "q": "Who was the first woman to fly solo across the Atlantic?", "a": "Amelia Earhart" },
+          { "q": "Which Roman city was buried by the eruption of Mount Vesuvius in 79 AD?", "a": "Pompeii" },
+          { "q": "Which wall did the Romans build across northern England?", "a": "Hadrian's Wall" },
+          { "q": "Which Carthaginian general crossed the Alps with war elephants?", "a": "Hannibal" },
+          { "q": "Who founded the Mongol Empire?", "a": "Genghis Khan" },
+          { "q": "In which country did the Renaissance begin?", "a": "Italy" },
+          { "q": "Which nurse became famous caring for soldiers in the Crimean War?", "a": "Florence Nightingale" },
+          { "q": "Whose almost untouched tomb was found in Egypt's Valley of the Kings in 1922?", "a": "Tutankhamun's" }
+        ],
+        "600": [
+          { "q": "In which year did Constantinople fall to the Ottomans?", "a": "1453" },
+          { "q": "Which city in modern Tunisia was ancient Rome's great rival?", "a": "Carthage" },
+          { "q": "Which 1919 treaty formally ended World War I with Germany?", "a": "The Treaty of Versailles" },
+          { "q": "Which Chinese dynasty built most of the Great Wall that stands today?", "a": "The Ming dynasty" },
+          { "q": "Which civilisation invented cuneiform, one of the first writing systems?", "a": "The Sumerians" },
+          { "q": "On which island did Napoleon die in exile?", "a": "Saint Helena" },
+          { "q": "Who was the first Roman emperor?", "a": "Augustus" },
+          { "q": "In which year did the French Revolution begin with the storming of the Bastille?", "a": "1789" },
+          { "q": "Whose expedition was the first to sail all the way around the world?", "a": "Ferdinand Magellan's (finished by Elcano)" },
+          { "q": "Who was the last tsar of Russia?", "a": "Nicholas II" },
+          { "q": "Which giant bronze statue, one of the Seven Wonders, stood at the harbour of Rhodes?", "a": "The Colossus of Rhodes" },
+          { "q": "Which Chinese general wrote \"The Art of War\"?", "a": "Sun Tzu" }
+        ]
+      }
+    },
+    {
+      "id": "christianity",
+      "name": "Chris\u00adtian\u00adity",
+      "icon": "✝️",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "According to the Gospels, in which town was Jesus born?", "a": "Bethlehem" },
+          { "q": "What was the name of Jesus's mother?", "a": "Mary" },
+          { "q": "How many apostles did Jesus choose?", "a": "Twelve" },
+          { "q": "Which apostle betrayed Jesus?", "a": "Judas Iscariot" },
+          { "q": "Which holiday celebrates the birth of Jesus?", "a": "Christmas" },
+          { "q": "Which holiday celebrates the resurrection of Jesus?", "a": "Easter" },
+          { "q": "In the Bible, who built an ark to survive the great flood?", "a": "Noah" },
+          { "q": "In the Bible, who were the first man and woman?", "a": "Adam and Eve" },
+          { "q": "Who is the head of the Catholic Church?", "a": "The Pope" },
+          { "q": "In which city-state does the Pope live?", "a": "Vatican City" },
+          { "q": "How many commandments did Moses receive?", "a": "Ten" },
+          { "q": "Which young shepherd defeated the giant Goliath?", "a": "David" }
+        ],
+        "400": [
+          { "q": "What are the first four books of the New Testament called?", "a": "The Gospels" },
+          { "q": "Who baptised Jesus?", "a": "John the Baptist" },
+          { "q": "In which river was Jesus baptised?", "a": "The Jordan" },
+          { "q": "What is the first book of the Bible?", "a": "Genesis" },
+          { "q": "Which apostle denied knowing Jesus three times?", "a": "Peter" },
+          { "q": "On which mountain did Moses receive the Ten Commandments?", "a": "Mount Sinai" },
+          { "q": "At the wedding at Cana, what did Jesus turn water into?", "a": "Wine" },
+          { "q": "Which season of fasting comes before Easter?", "a": "Lent" },
+          { "q": "What is the last book of the Bible?", "a": "Revelation" },
+          { "q": "In the Bible, who was swallowed by a great fish?", "a": "Jonah" },
+          { "q": "What is Jesus's final meal with his disciples called?", "a": "The Last Supper" },
+          { "q": "Which Roman governor sentenced Jesus to death?", "a": "Pontius Pilate" }
+        ],
+        "600": [
+          { "q": "How many books are in the New Testament?", "a": "27" },
+          { "q": "Who wrote most of the letters in the New Testament?", "a": "Paul" },
+          { "q": "What was Paul's name before his conversion?", "a": "Saul" },
+          { "q": "In which language was most of the New Testament first written?", "a": "Greek" },
+          { "q": "Which council in 325 AD produced the Nicene Creed?", "a": "The Council of Nicaea" },
+          { "q": "Who began the Protestant Reformation with his 95 Theses in 1517?", "a": "Martin Luther" },
+          { "q": "Which feast, 50 days after Easter, marks the Holy Spirit coming to the apostles?", "a": "Pentecost" },
+          { "q": "Who was the first Christian martyr, stoned in the Book of Acts?", "a": "Stephen" },
+          { "q": "In the Bible, who is the oldest person, living 969 years?", "a": "Methuselah" },
+          { "q": "Which Roman emperor legalised Christianity with the Edict of Milan in 313?", "a": "Constantine" },
+          { "q": "In which year did the Great Schism split the Catholic and Orthodox churches?", "a": "1054" },
+          { "q": "What is Saint Jerome's Latin translation of the Bible called?", "a": "The Vulgate" }
+        ]
+      }
+    },
+    {
+      "id": "islam",
+      "name": "Islam",
+      "icon": "☪️",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "What is the holy book of Islam?", "a": "The Quran" },
+          { "q": "In which month do Muslims fast from dawn to sunset?", "a": "Ramadan" },
+          { "q": "Towards which city do Muslims face when they pray?", "a": "Mecca" },
+          { "q": "What is the cube-shaped building at the centre of the Great Mosque of Mecca?", "a": "The Kaaba" },
+          { "q": "What is the pilgrimage to Mecca called?", "a": "Hajj" },
+          { "q": "What is a Muslim place of worship called?", "a": "A mosque" },
+          { "q": "Which festival marks the end of Ramadan?", "a": "Eid al-Fitr" },
+          { "q": "How many daily prayers are there in Islam?", "a": "Five" },
+          { "q": "What is the call to prayer called?", "a": "The adhan" },
+          { "q": "What is the tall tower of a mosque, used for the call to prayer, called?", "a": "A minaret" },
+          { "q": "In Islam, who is the last prophet?", "a": "Muhammad" },
+          { "q": "What Arabic word for God do Muslims use?", "a": "Allah" }
+        ],
+        "400": [
+          { "q": "How many pillars of Islam are there?", "a": "Five" },
+          { "q": "In which city is the Prophet's Mosque, al-Masjid an-Nabawi?", "a": "Medina" },
+          { "q": "What is Muhammad's migration from Mecca to Medina called?", "a": "The Hijra" },
+          { "q": "What is the first surah (chapter) of the Quran called?", "a": "Al-Fatiha" },
+          { "q": "How many surahs are in the Quran?", "a": "114" },
+          { "q": "Which festival comes at the end of Hajj and remembers Abraham's sacrifice?", "a": "Eid al-Adha" },
+          { "q": "What is the obligatory giving of a share of wealth to those in need called?", "a": "Zakat" },
+          { "q": "According to Islam, which angel revealed the Quran to Muhammad?", "a": "Gabriel (Jibril)" },
+          { "q": "In which cave did Muhammad receive the first revelation?", "a": "The Cave of Hira" },
+          { "q": "Who was Muhammad's first wife?", "a": "Khadija" },
+          { "q": "What is the meal eaten before dawn during Ramadan called?", "a": "Suhoor" },
+          { "q": "What are the two main branches of Islam?", "a": "Sunni and Shia" }
+        ],
+        "600": [
+          { "q": "In which year AD did the Hijra take place?", "a": "622" },
+          { "q": "What is the longest surah in the Quran?", "a": "Al-Baqarah" },
+          { "q": "Which night in the last ten days of Ramadan marks the first revelation of the Quran?", "a": "Laylat al-Qadr (the Night of Power)" },
+          { "q": "Who was the first caliph after Muhammad?", "a": "Abu Bakr" },
+          { "q": "Which mosque in Jerusalem is Islam's third holiest site?", "a": "Al-Aqsa Mosque" },
+          { "q": "What is the name of the sacred well beside the Kaaba?", "a": "Zamzam" },
+          { "q": "Which caliph had the Quran compiled into one standard written text?", "a": "Uthman" },
+          { "q": "What is the first month of the Islamic calendar?", "a": "Muharram" },
+          { "q": "What are the recorded sayings and actions of the Prophet called?", "a": "Hadith" },
+          { "q": "According to the Quran, which prophet built the Kaaba with his son Ismail?", "a": "Abraham (Ibrahim)" },
+          { "q": "Which battle in 624 AD was the first major victory of the early Muslims?", "a": "The Battle of Badr" },
+          { "q": "What is the Prophet's night journey from Mecca to Jerusalem called?", "a": "Al-Isra (the Isra and Mi'raj)" }
+        ]
+      }
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "icon": "🔬",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "Which planet is known as the Red Planet?", "a": "Mars" },
+          { "q": "Which gas do plants absorb from the air?", "a": "Carbon dioxide" },
+          { "q": "How many legs does a spider have?", "a": "Eight" },
+          { "q": "What is the largest planet in our solar system?", "a": "Jupiter" },
+          { "q": "What is the largest animal that has ever lived?", "a": "The blue whale" },
+          { "q": "At what temperature in °C does water boil at sea level?", "a": "100 °C" },
+          { "q": "Which organ pumps blood around the body?", "a": "The heart" },
+          { "q": "Which force keeps our feet on the ground?", "a": "Gravity" },
+          { "q": "Who came up with the theory of relativity?", "a": "Albert Einstein" },
+          { "q": "What is the closest star to Earth?", "a": "The Sun" },
+          { "q": "How many planets are in our solar system?", "a": "Eight" },
+          { "q": "What is the tallest animal in the world?", "a": "The giraffe" }
+        ],
+        "400": [
+          { "q": "What is the chemical symbol for gold?", "a": "Au" },
+          { "q": "What is the hardest natural substance?", "a": "Diamond" },
+          { "q": "Which part of the cell is nicknamed its \"powerhouse\"?", "a": "The mitochondria" },
+          { "q": "How many bones are in the adult human body?", "a": "206" },
+          { "q": "Which blood type is the universal donor?", "a": "O negative" },
+          { "q": "What is the largest organ of the human body?", "a": "The skin" },
+          { "q": "Who discovered penicillin?", "a": "Alexander Fleming" },
+          { "q": "Which metal is liquid at room temperature?", "a": "Mercury" },
+          { "q": "What is the most abundant element in the universe?", "a": "Hydrogen" },
+          { "q": "How many hearts does an octopus have?", "a": "Three" },
+          { "q": "Which planet is famous for its bright rings?", "a": "Saturn" },
+          { "q": "How many teeth does an adult human usually have?", "a": "32" }
+        ],
+        "600": [
+          { "q": "Which gas makes up most of Earth's atmosphere?", "a": "Nitrogen" },
+          { "q": "Roughly how fast does light travel, in km per second?", "a": "About 300,000 km/s" },
+          { "q": "What is the closest star to the Sun?", "a": "Proxima Centauri" },
+          { "q": "What is the chemical symbol for sodium?", "a": "Na" },
+          { "q": "What is the unit of electrical resistance?", "a": "The ohm" },
+          { "q": "Which planet spins on its side?", "a": "Uranus" },
+          { "q": "What is the smallest bone in the human body?", "a": "The stapes (in the ear)" },
+          { "q": "What is the edge of a black hole, beyond which nothing escapes, called?", "a": "The event horizon" },
+          { "q": "What does \"DNA\" stand for?", "a": "Deoxyribonucleic acid" },
+          { "q": "Which is the hottest planet in our solar system?", "a": "Venus" },
+          { "q": "Which element has the chemical symbol K?", "a": "Potassium" },
+          { "q": "What is the study of mushrooms and other fungi called?", "a": "Mycology" }
+        ]
+      }
+    },
+    {
+      "id": "screen",
+      "name": "Movies & Series",
+      "icon": "🎬",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "What is the name of the wizarding school in Harry Potter?", "a": "Hogwarts" },
+          { "q": "In The Lion King, who is Simba's father?", "a": "Mufasa" },
+          { "q": "What colour is Shrek?", "a": "Green" },
+          { "q": "Which superhero is secretly Bruce Wayne?", "a": "Batman" },
+          { "q": "What is the name of the cowboy in Toy Story?", "a": "Woody" },
+          { "q": "In which film does Elsa sing \"Let It Go\"?", "a": "Frozen" },
+          { "q": "Which green superhero is really the scientist Bruce Banner?", "a": "The Hulk" },
+          { "q": "In Star Wars, who turns out to be Luke Skywalker's father?", "a": "Darth Vader" },
+          { "q": "Which animated film follows a clownfish searching for his son?", "a": "Finding Nemo" },
+          { "q": "Which series follows the Starks and the Lannisters?", "a": "Game of Thrones" },
+          { "q": "Which Disney princess loses a glass slipper?", "a": "Cinderella" },
+          { "q": "What is the name of the talking snowman in Frozen?", "a": "Olaf" }
+        ],
+        "400": [
+          { "q": "Who directed both Titanic and Avatar?", "a": "James Cameron" },
+          { "q": "What is the coffee shop in Friends called?", "a": "Central Perk" },
+          { "q": "Which Netflix series is set in the town of Hawkins, Indiana?", "a": "Stranger Things" },
+          { "q": "In The Matrix, which colour pill does Neo take?", "a": "Red" },
+          { "q": "Which Korean series turns children's games into deadly contests?", "a": "Squid Game" },
+          { "q": "Which hobbit carries the One Ring to Mordor?", "a": "Frodo Baggins" },
+          { "q": "What was Pixar's first feature-length film?", "a": "Toy Story" },
+          { "q": "What is the hidden African nation in Black Panther called?", "a": "Wakanda" },
+          { "q": "Who plays Iron Man in the Marvel films?", "a": "Robert Downey Jr." },
+          { "q": "Which film won Best Picture at the 2024 Oscars?", "a": "Oppenheimer" },
+          { "q": "In Friends, what is Ross's job?", "a": "Palaeontologist" },
+          { "q": "Which series follows a chemistry teacher who starts making drugs?", "a": "Breaking Bad" }
+        ],
+        "600": [
+          { "q": "Which was the first non-English-language film to win Best Picture?", "a": "Parasite" },
+          { "q": "In Breaking Bad, what alias does Walter White use?", "a": "Heisenberg" },
+          { "q": "Which 1942 film gave us \"Here's looking at you, kid\"?", "a": "Casablanca" },
+          { "q": "Who directed Pulp Fiction?", "a": "Quentin Tarantino" },
+          { "q": "In Inception, what object does Cobb use as his totem?", "a": "A spinning top" },
+          { "q": "Which film won the very first Academy Award for Best Picture?", "a": "Wings (1927)" },
+          { "q": "In Money Heist, which building do the robbers take over in the first heist?", "a": "The Royal Mint of Spain" },
+          { "q": "Which film features the line \"I see dead people\"?", "a": "The Sixth Sense" },
+          { "q": "Who composed the music for Jaws, Star Wars and Jurassic Park?", "a": "John Williams" },
+          { "q": "Who directed the animated film \"Spirited Away\"?", "a": "Hayao Miyazaki" },
+          { "q": "Which film follows a hotel concierge called Monsieur Gustave H.?", "a": "The Grand Budapest Hotel" },
+          { "q": "In which city is the series \"The Wire\" set?", "a": "Baltimore" }
+        ]
+      }
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "icon": "🎵",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "Which band was made up of John, Paul, George and Ringo?", "a": "The Beatles" },
+          { "q": "Who is known as the \"King of Pop\"?", "a": "Michael Jackson" },
+          { "q": "How many strings does a standard guitar have?", "a": "Six" },
+          { "q": "Which instrument usually has 88 keys?", "a": "The piano" },
+          { "q": "Who sang \"Shape of You\"?", "a": "Ed Sheeran" },
+          { "q": "Who sang \"Hello\" and \"Someone Like You\"?", "a": "Adele" },
+          { "q": "Which South Korean group sang \"Dynamite\"?", "a": "BTS" },
+          { "q": "Who was the lead singer of Queen?", "a": "Freddie Mercury" },
+          { "q": "Which Colombian singer sang \"Hips Don't Lie\"?", "a": "Shakira" },
+          { "q": "Who sang \"Shake It Off\"?", "a": "Taylor Swift" },
+          { "q": "Which Canadian singer became famous as a teenager with \"Baby\"?", "a": "Justin Bieber" },
+          { "q": "Who is known as the \"King of Rock and Roll\"?", "a": "Elvis Presley" }
+        ],
+        "400": [
+          { "q": "Which composer wrote his Ninth Symphony while completely deaf?", "a": "Beethoven" },
+          { "q": "Which British band released \"Wonderwall\"?", "a": "Oasis" },
+          { "q": "Which rapper's real name is Marshall Mathers?", "a": "Eminem" },
+          { "q": "Which Swedish group won Eurovision in 1974 with \"Waterloo\"?", "a": "ABBA" },
+          { "q": "Who composed \"The Four Seasons\"?", "a": "Antonio Vivaldi" },
+          { "q": "Which singer is known as the \"Queen of Pop\"?", "a": "Madonna" },
+          { "q": "Which band sang \"Smells Like Teen Spirit\"?", "a": "Nirvana" },
+          { "q": "Who sang \"Purple Rain\"?", "a": "Prince" },
+          { "q": "In sheet music, what does \"forte\" mean?", "a": "Loud" },
+          { "q": "Which reggae legend sang \"No Woman, No Cry\"?", "a": "Bob Marley" },
+          { "q": "Which rapper is married to Beyoncé?", "a": "Jay-Z" },
+          { "q": "Which band recorded \"Hotel California\"?", "a": "Eagles" }
+        ],
+        "600": [
+          { "q": "How many symphonies did Beethoven complete?", "a": "Nine" },
+          { "q": "Which instrument does Yo-Yo Ma play?", "a": "The cello" },
+          { "q": "Who composed the opera \"The Magic Flute\"?", "a": "Mozart" },
+          { "q": "How many lines are there on a standard music staff?", "a": "Five" },
+          { "q": "Which band released the 1973 album \"The Dark Side of the Moon\"?", "a": "Pink Floyd" },
+          { "q": "What was the name of David Bowie's alien alter ego?", "a": "Ziggy Stardust" },
+          { "q": "Which musical term means \"gradually getting louder\"?", "a": "Crescendo" },
+          { "q": "Which singer was born Stefani Germanotta?", "a": "Lady Gaga" },
+          { "q": "Which jazz trumpeter sang \"What a Wonderful World\"?", "a": "Louis Armstrong" },
+          { "q": "Who composed the ballet \"The Nutcracker\"?", "a": "Tchaikovsky" },
+          { "q": "Which singer's full name is Robyn Rihanna Fenty?", "a": "Rihanna" },
+          { "q": "What was the very first music video played on MTV, in 1981?", "a": "\"Video Killed the Radio Star\" (The Buggles)" }
+        ]
+      }
+    },
+    {
+      "id": "football",
+      "name": "Football",
+      "icon": "⚽",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "Which country won the 2022 World Cup?", "a": "Argentina" },
+          { "q": "Who scored the \"Hand of God\" goal in 1986?", "a": "Diego Maradona" },
+          { "q": "Which club plays its home games at Old Trafford?", "a": "Manchester United" },
+          { "q": "Which Spanish club plays at the Santiago Bernabéu?", "a": "Real Madrid" },
+          { "q": "Who is this player?", "a": "Lionel Messi", "img": "player-messi" },
+          { "q": "Who is this player?", "a": "Cristiano Ronaldo", "img": "player-ronaldo" },
+          { "q": "Who is this player?", "a": "David Beckham", "img": "player-beckham" },
+          { "q": "Who is this player?", "a": "Neymar", "img": "player-neymar" },
+          { "q": "Who is this player?", "a": "Kylian Mbappé", "img": "player-mbappe" },
+          { "q": "Who is this player?", "a": "Zinedine Zidane", "img": "player-zidane" },
+          { "q": "Who is this player?", "a": "Ronaldinho", "img": "player-ronaldinho" },
+          { "q": "Who is this player?", "a": "Mohamed Salah", "img": "player-salah" }
+        ],
+        "400": [
+          { "q": "Which country won the 2018 World Cup?", "a": "France" },
+          { "q": "Which country won Euro 2024?", "a": "Spain" },
+          { "q": "Which national team is nicknamed \"the Atlas Lions\"?", "a": "Morocco" },
+          { "q": "Which Italian club is nicknamed \"the Old Lady\"?", "a": "Juventus" },
+          { "q": "Which country won the very first World Cup, in 1930?", "a": "Uruguay" },
+          { "q": "Which club went unbeaten through the 2003–04 Premier League season?", "a": "Arsenal" },
+          { "q": "Which Dutch legend gave his name to a famous dribbling turn?", "a": "Johan Cruyff" },
+          { "q": "How many teams took part in the 2026 World Cup?", "a": "48" },
+          { "q": "Who is this player?", "a": "Pelé", "img": "player-pele" },
+          { "q": "Who is this player?", "a": "Luka Modrić", "img": "player-modric" },
+          { "q": "Who is this player?", "a": "Andrés Iniesta", "img": "player-iniesta" },
+          { "q": "Who is this player?", "a": "Paolo Maldini", "img": "player-maldini" }
+        ],
+        "600": [
+          { "q": "Who has scored the most goals in World Cup history?", "a": "Miroslav Klose (16)" },
+          { "q": "Who is the only goalkeeper to have won the Ballon d'Or?", "a": "Lev Yashin" },
+          { "q": "Which country won the first Women's World Cup, in 1991?", "a": "The United States" },
+          { "q": "For which Brazilian club did Pelé play most of his career?", "a": "Santos" },
+          { "q": "Which country won Euro 2004 as huge outsiders?", "a": "Greece" },
+          { "q": "Which club won the very first European Cup, in 1956?", "a": "Real Madrid" },
+          { "q": "Who scored the fastest goal in World Cup history, after 11 seconds in 2002?", "a": "Hakan Şükür (Turkey)" },
+          { "q": "In which year did the Premier League begin?", "a": "1992" },
+          { "q": "Who is this player?", "a": "Franz Beckenbauer", "img": "player-beckenbauer" },
+          { "q": "Who is this player?", "a": "Michel Platini", "img": "player-platini" },
+          { "q": "Who is this player?", "a": "Andrea Pirlo", "img": "player-pirlo" },
+          { "q": "Who is this player?", "a": "Roberto Baggio", "img": "player-baggio" }
+        ]
+      }
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "icon": "🏅",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "How many players does a basketball team have on court?", "a": "Five" },
+          { "q": "Which sport is played at Wimbledon?", "a": "Tennis" },
+          { "q": "How many rings are on the Olympic flag?", "a": "Five" },
+          { "q": "Which sprinter holds the 100 m world record?", "a": "Usain Bolt" },
+          { "q": "In which sport do you score a touchdown?", "a": "American football" },
+          { "q": "Which sport is played with a shuttlecock?", "a": "Badminton" },
+          { "q": "In which sport would you do a slam dunk?", "a": "Basketball" },
+          { "q": "Which city hosted the 2024 Summer Olympics?", "a": "Paris" },
+          { "q": "In which sport do you shoot arrows at a target?", "a": "Archery" },
+          { "q": "How many holes are in a standard round of golf?", "a": "18" },
+          { "q": "In which sport do players form a scrum?", "a": "Rugby" },
+          { "q": "In which country is the Tour de France held?", "a": "France" }
+        ],
+        "400": [
+          { "q": "Roughly how long is a marathon, in kilometres?", "a": "About 42 km (42.195)" },
+          { "q": "How many players does a volleyball team have on court?", "a": "Six" },
+          { "q": "Which man has won the most Grand Slam singles titles in tennis?", "a": "Novak Djokovic" },
+          { "q": "How long is an Olympic swimming pool, in metres?", "a": "50 metres" },
+          { "q": "In tennis, what is a score of zero called?", "a": "Love" },
+          { "q": "In golf, what do you call one stroke under par?", "a": "A birdie" },
+          { "q": "In which sport is the Stanley Cup awarded?", "a": "Ice hockey" },
+          { "q": "Which Grand Slam tennis tournament is played on clay?", "a": "The French Open (Roland Garros)" },
+          { "q": "Which boxer was born Cassius Clay?", "a": "Muhammad Ali" },
+          { "q": "In which sport is the Ryder Cup played?", "a": "Golf" },
+          { "q": "Which swimmer has won the most Olympic gold medals?", "a": "Michael Phelps" },
+          { "q": "How many points is a try worth in rugby union?", "a": "Five" }
+        ],
+        "600": [
+          { "q": "Which country has won the Davis Cup in tennis more than any other?", "a": "The United States" },
+          { "q": "In snooker, how many points is the black ball worth?", "a": "Seven" },
+          { "q": "How many players does a rugby union team have on the field?", "a": "Fifteen" },
+          { "q": "Which country won the first Rugby World Cup, in 1987?", "a": "New Zealand" },
+          { "q": "What is the maximum break in snooker?", "a": "147" },
+          { "q": "In which event would an athlete do the \"Fosbury Flop\"?", "a": "The high jump" },
+          { "q": "Which country did taekwondo come from?", "a": "Korea" },
+          { "q": "In cricket, how many balls are in an over?", "a": "Six" },
+          { "q": "In which city were the first modern Olympics held, in 1896?", "a": "Athens" },
+          { "q": "Which traditional wrestling style is Japan's national sport?", "a": "Sumo" },
+          { "q": "How long is a cricket pitch?", "a": "22 yards (about 20 m)" },
+          { "q": "In which year did Usain Bolt run his 9.58 s world record?", "a": "2009" }
+        ]
+      }
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "icon": "🍽️",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "What is the main ingredient of hummus?", "a": "Chickpeas" },
+          { "q": "Which fruit is guacamole made from?", "a": "Avocado" },
+          { "q": "Which country does spaghetti carbonara come from?", "a": "Italy" },
+          { "q": "Which vegetable makes you cry when you cut it?", "a": "The onion" },
+          { "q": "What do bees make?", "a": "Honey" },
+          { "q": "What are French fries made from?", "a": "Potatoes" },
+          { "q": "What is the main ingredient of an omelette?", "a": "Eggs" },
+          { "q": "Which fruit is dried to make raisins?", "a": "Grapes" },
+          { "q": "Name this dish", "a": "Sushi", "img": "dish-sushi" },
+          { "q": "Name this pastry", "a": "A croissant", "img": "dish-croissant" },
+          { "q": "Name this dish", "a": "Tacos", "img": "dish-taco" },
+          { "q": "Name this dish", "a": "Pizza", "img": "dish-pizza" }
+        ],
+        "400": [
+          { "q": "Which cheese traditionally tops a pizza Margherita?", "a": "Mozzarella" },
+          { "q": "Which layered pastry is filled with nuts and soaked in syrup?", "a": "Baklava" },
+          { "q": "Which spice gives curry its yellow colour?", "a": "Turmeric" },
+          { "q": "Which country does kimchi come from?", "a": "Korea" },
+          { "q": "Which Italian dessert's name means \"pick me up\"?", "a": "Tiramisu" },
+          { "q": "What is tofu made from?", "a": "Soybeans" },
+          { "q": "Which Japanese drink is made from fermented rice?", "a": "Sake" },
+          { "q": "Which cheese goes into a Greek salad?", "a": "Feta" },
+          { "q": "Name this dish", "a": "Paella", "img": "dish-paella" },
+          { "q": "Name this dish", "a": "Shakshouka", "img": "dish-shakshouka" },
+          { "q": "Name this dish", "a": "Ramen", "img": "dish-ramen" },
+          { "q": "Name this food", "a": "Dim sum", "img": "dish-dimsum" }
+        ],
+        "600": [
+          { "q": "What is the most expensive spice in the world by weight?", "a": "Saffron" },
+          { "q": "Which Japanese word names the savoury \"fifth taste\"?", "a": "Umami" },
+          { "q": "Which French stew is beef slow-cooked in red wine?", "a": "Boeuf bourguignon" },
+          { "q": "Which pasta's name means \"little ears\"?", "a": "Orecchiette" },
+          { "q": "Which nut is marzipan made from?", "a": "Almonds" },
+          { "q": "Which country does ceviche come from?", "a": "Peru" },
+          { "q": "Which pastry are profiteroles and éclairs made from?", "a": "Choux pastry" },
+          { "q": "Which small salty fish goes into a classic Caesar dressing?", "a": "Anchovies" },
+          { "q": "Name this dish", "a": "Bibimbap", "img": "dish-bibimbap" },
+          { "q": "Name this dish", "a": "Phở (Vietnamese noodle soup)", "img": "dish-pho" },
+          { "q": "Name this dish", "a": "Moussaka", "img": "dish-moussaka" },
+          { "q": "Name this dish", "a": "Poutine", "img": "dish-poutine" }
+        ]
+      }
+    },
+    {
+      "id": "tech",
+      "name": "Games & Tech",
+      "icon": "🎮",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "Which company makes the iPhone?", "a": "Apple" },
+          { "q": "What is the name of Mario's brother?", "a": "Luigi" },
+          { "q": "In which game do you build with blocks and run from Creepers?", "a": "Minecraft" },
+          { "q": "Which yellow electric Pokémon is Ash's partner?", "a": "Pikachu" },
+          { "q": "Which company owns Instagram and WhatsApp?", "a": "Meta (Facebook)" },
+          { "q": "What is Google's web browser called?", "a": "Chrome" },
+          { "q": "What is Apple's voice assistant called?", "a": "Siri" },
+          { "q": "Which company makes the PlayStation?", "a": "Sony" },
+          { "q": "Who founded Amazon?", "a": "Jeff Bezos" },
+          { "q": "Which company makes Galaxy phones?", "a": "Samsung" },
+          { "q": "What is the name of Sega's fast blue hedgehog?", "a": "Sonic" },
+          { "q": "Which video site is owned by Google?", "a": "YouTube" }
+        ],
+        "400": [
+          { "q": "Who co-founded Microsoft with Paul Allen?", "a": "Bill Gates" },
+          { "q": "What does \"CPU\" stand for?", "a": "Central Processing Unit" },
+          { "q": "What does \"USB\" stand for?", "a": "Universal Serial Bus" },
+          { "q": "Which video game series stars Master Chief?", "a": "Halo" },
+          { "q": "Which company owns the Android operating system?", "a": "Google" },
+          { "q": "How many bits are in a byte?", "a": "Eight" },
+          { "q": "Which 1972 table-tennis game was the first big arcade hit?", "a": "Pong" },
+          { "q": "What does \"GPU\" stand for?", "a": "Graphics Processing Unit" },
+          { "q": "In which year was Facebook launched?", "a": "2004" },
+          { "q": "What does \"RAM\" stand for?", "a": "Random Access Memory" },
+          { "q": "Which company created ChatGPT?", "a": "OpenAI" },
+          { "q": "What does \"PDF\" stand for?", "a": "Portable Document Format" }
+        ],
+        "600": [
+          { "q": "In which year was the first iPhone released?", "a": "2007" },
+          { "q": "What does \"HTTP\" stand for?", "a": "HyperText Transfer Protocol" },
+          { "q": "Who is widely considered the first computer programmer?", "a": "Ada Lovelace" },
+          { "q": "Which programming language shares its name with an Indonesian island?", "a": "Java" },
+          { "q": "In which year did Tim Berners-Lee propose the World Wide Web?", "a": "1989" },
+          { "q": "In which country was Tetris created?", "a": "The Soviet Union (Russia)" },
+          { "q": "Which programming language is named after a British comedy group?", "a": "Python (after Monty Python)" },
+          { "q": "In which year was Google founded?", "a": "1998" },
+          { "q": "Who created the Linux operating system?", "a": "Linus Torvalds" },
+          { "q": "What was the first name of Apple co-founder Wozniak?", "a": "Steve" },
+          { "q": "Which 1993 web browser first made the web popular with pictures?", "a": "Mosaic" },
+          { "q": "How many bits long is an IPv4 address?", "a": "32" }
+        ]
+      }
+    },
+    {
+      "id": "levant",
+      "name": "Leb\u00ada\u00adnon & the Levant",
+      "icon": "🌲",
+      "kind": "qa",
+      "levels": {
+        "200": [
+          { "q": "What is the capital of Lebanon?", "a": "Beirut" },
+          { "q": "Which tree appears on the Lebanese flag?", "a": "The cedar" },
+          { "q": "What is the currency of Lebanon?", "a": "The Lebanese pound (lira)" },
+          { "q": "Which sea lies along Lebanon's coast?", "a": "The Mediterranean" },
+          { "q": "What are the three colours of the Lebanese flag?", "a": "Red, white and green" },
+          { "q": "Which country borders Lebanon to the north and east?", "a": "Syria" },
+          { "q": "What is Lebanon's second-largest city, in the north?", "a": "Tripoli" },
+          { "q": "What is the capital of Jordan?", "a": "Amman" },
+          { "q": "What is the capital of Syria?", "a": "Damascus" },
+          { "q": "Which Lebanese salad is made mostly of parsley?", "a": "Tabbouleh" },
+          { "q": "What is the Lebanese flatbread topped with za'atar called?", "a": "Man'oushe" },
+          { "q": "Which line dance is performed at Lebanese weddings?", "a": "Dabke" }
+        ],
+        "400": [
+          { "q": "Which Lebanese city is home to the Roman Temple of Bacchus?", "a": "Baalbek" },
+          { "q": "Which Lebanese-American writer wrote \"The Prophet\"?", "a": "Khalil Gibran" },
+          { "q": "Which southern Lebanese city has a Crusader castle built out at sea?", "a": "Sidon (Saida)" },
+          { "q": "Which fertile valley lies between Mount Lebanon and the Anti-Lebanon range?", "a": "The Beqaa Valley" },
+          { "q": "What are the two huge rocks off Beirut's Raouché coast called?", "a": "Pigeon Rocks" },
+          { "q": "Which Lebanese cave system was a finalist for the New7Wonders of Nature?", "a": "Jeita Grotto" },
+          { "q": "What is Beirut's long seaside promenade called?", "a": "The Corniche" },
+          { "q": "Which spice gives arak its flavour?", "a": "Aniseed" },
+          { "q": "Which Syrian city is famous for its ancient citadel and laurel soap?", "a": "Aleppo" },
+          { "q": "Which legendary Lebanese singer was born Nouhad Haddad?", "a": "Fairuz" },
+          { "q": "Which Lebanese director made \"Caramel\" and \"Capernaum\"?", "a": "Nadine Labaki" },
+          { "q": "Which Lebanese singer had a hit with \"Ah W Noss\"?", "a": "Nancy Ajram" }
+        ],
+        "600": [
+          { "q": "In which year did Lebanon gain independence?", "a": "1943" },
+          { "q": "Which ancient Lebanese port gave its name to the word \"Bible\"?", "a": "Byblos (Jbeil)" },
+          { "q": "What is the highest peak in Lebanon?", "a": "Qurnat as Sawda'" },
+          { "q": "Which \"Holy Valley\" of ancient monasteries is a UNESCO site in north Lebanon?", "a": "The Qadisha Valley" },
+          { "q": "Who wrote the lyrics of the Lebanese national anthem?", "a": "Rashid Nakhleh" },
+          { "q": "Which Phoenician city was famous for its purple dye?", "a": "Tyre" },
+          { "q": "Which emir built the Beiteddine Palace in the 19th century?", "a": "Emir Bashir Shihab II" },
+          { "q": "In which Lebanese city is the Great Mansouri Mosque?", "a": "Tripoli" },
+          { "q": "Queen Zenobia ruled from which ancient Syrian desert city?", "a": "Palmyra" },
+          { "q": "Which brothers wrote and composed many of Fairuz's greatest songs?", "a": "The Rahbani brothers" },
+          { "q": "Which Beirut-born singer had a 2007 hit with \"Grace Kelly\"?", "a": "Mika" },
+          { "q": "In which year did Lebanon host the AFC Asian Cup?", "a": "2000" }
+        ]
+      }
+    },
+    {
+      "id": "emoji",
+      "name": "Emoji Movies",
+      "icon": "🧩",
+      "kind": "emoji",
+      "levels": {
+        "200": [
+          { "q": "🦁👑", "a": "The Lion King" },
+          { "q": "🕷️🧑", "a": "Spider-Man" },
+          { "q": "❄️👸⛄", "a": "Frozen" },
+          { "q": "🐠🔍", "a": "Finding Nemo" },
+          { "q": "🧸🤠🚀", "a": "Toy Story" },
+          { "q": "🐼🥋", "a": "Kung Fu Panda" },
+          { "q": "🦇🧔", "a": "Batman" },
+          { "q": "👻🚫", "a": "Ghostbusters" },
+          { "q": "🧜‍♀️🐚", "a": "The Little Mermaid" },
+          { "q": "🧞🪔🐒", "a": "Aladdin" },
+          { "q": "🐘👂✈️", "a": "Dumbo" },
+          { "q": "🐶🍝❤️", "a": "Lady and the Tramp" }
+        ],
+        "400": [
+          { "q": "🚢🧊💔", "a": "Titanic" },
+          { "q": "🦖🏝️", "a": "Jurassic Park" },
+          { "q": "🏠🎈👴", "a": "Up" },
+          { "q": "🧙‍♂️⚡👓", "a": "Harry Potter" },
+          { "q": "⭐⚔️🌌", "a": "Star Wars" },
+          { "q": "👽📞🏠", "a": "E.T." },
+          { "q": "🦈🏖️", "a": "Jaws" },
+          { "q": "🍫🏭🎩", "a": "Charlie and the Chocolate Factory" },
+          { "q": "🦍🏙️✈️", "a": "King Kong" },
+          { "q": "🛡️⭐🦸", "a": "Captain America" },
+          { "q": "🏴‍☠️🚢💀", "a": "Pirates of the Caribbean" },
+          { "q": "👓💛🍌", "a": "Despicable Me (Minions)" }
+        ],
+        "600": [
+          { "q": "🐀👨‍🍳🗼", "a": "Ratatouille" },
+          { "q": "💍🌋🧙", "a": "The Lord of the Rings" },
+          { "q": "🃏🦇🌃", "a": "The Dark Knight" },
+          { "q": "🌪️👠🦁", "a": "The Wizard of Oz" },
+          { "q": "👨‍🚀🌽🕳️", "a": "Interstellar" },
+          { "q": "🐯🚣🌊", "a": "Life of Pi" },
+          { "q": "🧠😢😡😊", "a": "Inside Out" },
+          { "q": "🏃🍫🦐", "a": "Forrest Gump" },
+          { "q": "⏰🚗⚡", "a": "Back to the Future" },
+          { "q": "👊🧼", "a": "Fight Club" },
+          { "q": "🐑🤫", "a": "The Silence of the Lambs" },
+          { "q": "💃🌃🎹", "a": "La La Land" }
+        ]
+      }
+    },
+    {
+      "id": "blank",
+      "name": "Finish the Line",
+      "icon": "✍️",
+      "kind": "blank",
+      "levels": {
+        "200": [
+          { "q": "\"A picture is worth a thousand ____.\"", "a": "Words" },
+          { "q": "\"Rome wasn't built in a ____.\"", "a": "Day" },
+          { "q": "\"An apple a day keeps the ____ away.\"", "a": "Doctor" },
+          { "q": "\"Better late than ____.\"", "a": "Never" },
+          { "q": "\"Practice makes ____.\"", "a": "Perfect" },
+          { "q": "\"Every cloud has a silver ____.\"", "a": "Lining" },
+          { "q": "\"Don't judge a book by its ____.\"", "a": "Cover" },
+          { "q": "\"The early bird catches the ____.\"", "a": "Worm" },
+          { "q": "\"All that glitters is not ____.\"", "a": "Gold" },
+          { "q": "\"Laughter is the best ____.\"", "a": "Medicine" },
+          { "q": "\"Home is where the ____ is.\"", "a": "Heart" },
+          { "q": "\"Two heads are better than ____.\"", "a": "One" }
+        ],
+        "400": [
+          { "q": "\"May the ____ be with you.\"", "a": "Force" },
+          { "q": "\"To be, or not to be, that is the ____.\"", "a": "Question" },
+          { "q": "\"Houston, we have a ____.\"", "a": "Problem" },
+          { "q": "\"I think, therefore I ____.\"", "a": "Am" },
+          { "q": "\"Life is like a box of ____.\"", "a": "Chocolates" },
+          { "q": "\"I'll be ____.\"", "a": "Back" },
+          { "q": "\"To infinity and ____!\"", "a": "Beyond" },
+          { "q": "\"With great power comes great ____.\"", "a": "Responsibility" },
+          { "q": "\"That's one small step for man, one giant ____ for mankind.\"", "a": "Leap" },
+          { "q": "\"Frankly, my dear, I don't give a ____.\"", "a": "Damn" },
+          { "q": "\"You can't handle the ____!\"", "a": "Truth" },
+          { "q": "\"Show me the ____!\"", "a": "Money" }
+        ],
+        "600": [
+          { "q": "\"The only thing we have to fear is ____ itself.\"", "a": "Fear" },
+          { "q": "\"Float like a butterfly, sting like a ____.\"", "a": "Bee" },
+          { "q": "\"Ask not what your country can do for you — ask what you can do for your ____.\"", "a": "Country" },
+          { "q": "\"Veni, vidi, ____.\"", "a": "Vici" },
+          { "q": "\"The unexamined life is not worth ____.\"", "a": "Living" },
+          { "q": "\"Be the change you wish to see in the ____.\"", "a": "World" },
+          { "q": "\"Keep your friends close and your enemies ____.\"", "a": "Closer" },
+          { "q": "\"Elementary, my dear ____.\"", "a": "Watson" },
+          { "q": "\"Hell is other ____.\"", "a": "People" },
+          { "q": "\"Imagination is more important than ____.\"", "a": "Knowledge" },
+          { "q": "\"Not all those who wander are ____.\"", "a": "Lost" },
+          { "q": "\"In the middle of difficulty lies ____.\"", "a": "Opportunity" }
+        ]
+      }
+    },
+    {
+      "id": "charades",
+      "name": "Charades",
+      "icon": "🎭",
+      "kind": "charades",
+      "levels": {
+        "200": [
+          { "q": "Act it out", "a": "Brushing your teeth" },
+          { "q": "Act it out", "a": "Swimming" },
+          { "q": "Act it out", "a": "Riding a horse" },
+          { "q": "Act it out", "a": "Playing the guitar" },
+          { "q": "Act it out", "a": "Eating spaghetti" },
+          { "q": "Act it out", "a": "Fishing" },
+          { "q": "Act it out", "a": "Scoring a goal" },
+          { "q": "Act it out", "a": "A crying baby" },
+          { "q": "Act it out", "a": "Climbing a ladder" },
+          { "q": "Act it out", "a": "Driving a car" },
+          { "q": "Act it out", "a": "Skipping rope" },
+          { "q": "Act it out", "a": "Playing the piano" }
+        ],
+        "400": [
+          { "q": "Act it out", "a": "Taking a selfie" },
+          { "q": "Act it out", "a": "Making coffee" },
+          { "q": "Act it out", "a": "Stuck in traffic" },
+          { "q": "Act it out", "a": "Walking a dog that pulls" },
+          { "q": "Act it out", "a": "Blowing up a balloon" },
+          { "q": "Act it out", "a": "Ironing a shirt" },
+          { "q": "Act it out", "a": "Doing yoga" },
+          { "q": "Act it out", "a": "Opening a jar that won't open" },
+          { "q": "Act it out", "a": "Taking a cold shower" },
+          { "q": "Act it out", "a": "Bowling" },
+          { "q": "Act it out", "a": "Walking on ice" },
+          { "q": "Act it out", "a": "Juggling" }
+        ],
+        "600": [
+          { "q": "Act it out", "a": "Changing a flat tyre" },
+          { "q": "Act it out", "a": "Parallel parking" },
+          { "q": "Act it out", "a": "A goalkeeper saving a penalty" },
+          { "q": "Act it out", "a": "A waiter carrying too many plates" },
+          { "q": "Act it out", "a": "A cat chasing a laser dot" },
+          { "q": "Act it out", "a": "Building flat-pack furniture" },
+          { "q": "Act it out", "a": "Baking a cake" },
+          { "q": "Act it out", "a": "A mime trapped in a box" },
+          { "q": "Act it out", "a": "Searching for the phone in your hand" },
+          { "q": "Act it out", "a": "A tightrope walker in the wind" },
+          { "q": "Act it out", "a": "A lost tourist with a huge map" },
+          { "q": "Act it out", "a": "Giving a cat a bath" }
+        ]
+      }
+    }
+  ]
+}

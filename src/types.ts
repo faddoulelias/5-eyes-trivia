@@ -1,14 +1,21 @@
 export type Kind = 'qa' | 'blank' | 'emoji' | 'charades' | 'picture';
 
-/** [prompt, answer, optional picture key from src/images.ts] */
-export type QA = readonly [string, string, string?];
+/** One card as written in src/data/questions.json. */
+export interface QA {
+  /** The question (or emoji clue, or "Act it out") */
+  q: string;
+  /** The answer revealed at the end */
+  a: string;
+  /** Optional picture key from src/images.ts */
+  img?: string;
+}
 
 export interface Category {
   id: string;
   name: string;
   icon: string;
   kind: Kind;
-  /** easy, medium, hard — 12 cards each; a match draws 2 per tier */
+  /** easy (200), medium (400), hard (600) — 12 cards each; a match draws 2 per tier */
   tiers: readonly [readonly QA[], readonly QA[], readonly QA[]];
 }
 

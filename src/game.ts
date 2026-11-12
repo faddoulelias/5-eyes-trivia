@@ -29,7 +29,7 @@ export const cardId = (categoryId: string, q: string, a: string): string => `${c
 /** How many cards in a category have not been played yet on this device. */
 export function unseenCount(categoryId: string, seen: readonly string[]): number {
   const played = new Set(seen);
-  return byId(categoryId).tiers.flat().filter(([q, a]) => !played.has(cardId(categoryId, q, a))).length;
+  return byId(categoryId).tiers.flat().filter(({ q, a }) => !played.has(cardId(categoryId, q, a))).length;
 }
 
 export function loadState(): State {
@@ -79,12 +79,12 @@ function buildBoard(picked: string[], seen: readonly string[]): Cell[][] {
   const playedAt = new Map(seen.map((id, i) => [id, i]));
   return picked.map((catId) =>
     byId(catId).tiers.flatMap((tier, t) => {
-      const age = ([q, a]: (typeof tier)[number]) => playedAt.get(cardId(catId, q, a));
+      const age = ({ q, a }: (typeof tier)[number]) => playedAt.get(cardId(catId, q, a));
       const fresh = shuffle(tier.filter((card) => age(card) === undefined));
       const replay = tier.filter((card) => age(card) !== undefined).sort((x, y) => age(x)! - age(y)!);
       return [...fresh, ...replay]
         .slice(0, PER_TIER)
-        .map(([q, a, img]): Cell => ({ q, a, img, value: TIER_VALUES[t], done: false, by: null }));
+        .map(({ q, a, img }): Cell => ({ q, a, img, value: TIER_VALUES[t], done: false, by: null }));
     }),
   );
 }
