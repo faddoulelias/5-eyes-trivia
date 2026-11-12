@@ -214,10 +214,21 @@ button:disabled { cursor: not-allowed; }
   padding: 4px 10px; margin: 0 2px 4px; min-height: 40px; text-align: left;
   font-weight: 700; font-size: 0.9rem; line-height: 1.05;
   display: flex; align-items: center; justify-content: center; gap: 6px;
-  overflow-wrap: anywhere; transform: rotate(-1.5deg);
+  overflow-wrap: break-word; hyphens: auto; transform: rotate(-1.5deg);
 }
 .col:nth-child(even) .col-head { transform: rotate(1.5deg); }
 .col-head span:first-child { font-size: 1.2rem; line-height: 1; flex: none; }
+.col-head span:last-child { min-width: 0; }
+/* Narrow columns: stack the icon above the name so long names like
+   "Christianity" get the full width instead of breaking mid-word. */
+.col { container-type: inline-size; }
+@container (max-width: 170px) {
+  .col-head {
+    flex-direction: column; gap: 1px; text-align: center; padding: 3px 6px; min-height: 48px; border-radius: 14px;
+    font-size: clamp(0.7rem, 10.5cqi, 0.95rem);
+  }
+  .col-head span:first-child { font-size: 1rem; }
+}
 .cell {
   background: var(--paper); border: var(--edge); border-radius: 14px; box-shadow: 0 5px 0 var(--ink);
   font-weight: 700; font-size: clamp(1rem, 2.6vw, 1.6rem); color: var(--ink);
@@ -299,6 +310,8 @@ button:disabled { cursor: not-allowed; }
     text-align: center; border-width: 2px; border-radius: 10px; box-shadow: 0 2px 0 var(--ink);
   }
   .col-head span:first-child { font-size: 0.95rem; }
+  /* Phone columns are ~40px wide: let long names break (at their soft hyphens first). */
+  .col-head span:last-child { overflow-wrap: anywhere; }
   .cell { border-width: 2px; border-radius: 10px; box-shadow: 0 3px 0 var(--ink); margin-bottom: 3px; }
   .cell.done { transform: translateY(3px); }
   .score { padding: 8px 10px; }
