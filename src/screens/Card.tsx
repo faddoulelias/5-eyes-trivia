@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
 import type { ScreenProps } from '../App';
 import { byId } from '../questions';
+import { IMAGES, type PictureInfo } from '../images';
 import type { Kind, Phase } from '../types';
 
-const ANSWER_SECONDS: Record<Kind, number> = { qa: 30, blank: 30, emoji: 30, charades: 60 };
+const ANSWER_SECONDS: Record<Kind, number> = { qa: 30, blank: 30, emoji: 30, picture: 30, charades: 60 };
 const STEAL_SECONDS = 15;
 
 const KIND_LABEL: Record<Kind, string> = {
   qa: 'Answer out loud',
   blank: 'Fill in the blank',
   emoji: 'Name the movie',
+  picture: 'Picture round',
   charades: 'Act it out — no words',
 };
 
@@ -28,6 +30,29 @@ function beep() {
   } catch {
     /* audio is optional */
   }
+}
+
+/**
+ * The card's photo, with a fallback if it won't load. The licence credit is
+ * shown only after the reveal: credits often name the subject ("PD-India",
+ * "Lhasa Government") and would give the answer away.
+ */
+function Picture({ info, showCredit }: { info: PictureInfo; showCredit: boolean }) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <figure className="card-img">
+      {failed ? (
+        <p className="img-fail">The picture didn't load. Check the connection, or tap Answer locked in to move on.</p>
+      ) : (
+        <img src={info.src} alt="Picture clue" onError={() => setFailed(true)} />
+      )}
+      {showCredit && (
+        <figcaption>
+          <a href={info.page} target="_blank" rel="noreferrer">Photo: {info.credit}</a>
+        </figcaption>
+      )}
+    </figure>
+  );
 }
 
 /** Counts down while the phase is timed; restarts whenever the phase changes. */
@@ -68,6 +93,7 @@ export default function Card({ state, dispatch }: ScreenProps) {
   const answerVisible = done || reveal || (charades && shown);
   const active = cur.phase === 'steal' ? other : team;
   const scorer = cell.by !== null && cell.by >= 0 ? state.teams[cell.by] : null;
+  const picture = cell.img ? IMAGES[cell.img] : undefined;
 
   return (
     <div className="overlay" role="dialog" aria-modal="true" aria-label={`${cat.name} for ${cell.value}`}>
@@ -93,7 +119,9 @@ export default function Card({ state, dispatch }: ScreenProps) {
           </div>
         )}
 
-        <p className="kind">{KIND_LABEL[cat.kind]}</p>
+        <p className="kind">{picture ? 'Picture round' : KIND_LABEL[cat.kind]}</p>
+
+        {picture && <Picture info={picture} showCredit={answerVisible} />}
 
         {charades ? (
           <p className="prompt">
@@ -102,7 +130,7 @@ export default function Card({ state, dispatch }: ScreenProps) {
               : '🤫 Word hidden'}
           </p>
         ) : (
-          <p className={`prompt ${cat.kind === 'emoji' ? 'emoji' : ''}`}>{cell.q}</p>
+          <p className={`prompt ${cat.kind === 'emoji' ? 'emoji' : ''} ${picture ? 'small' : ''}`}>{cell.q}</p>
         )}
 
         {!charades && answerVisible && (

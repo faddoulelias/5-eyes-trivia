@@ -20,7 +20,17 @@ export const initialState = (): State => ({
   board: null,
   turn: 0,
   cur: null,
+  seen: [],
 });
+
+/** Stable identity of a card across matches and deck edits. */
+export const cardId = (categoryId: string, q: string, a: string): string => `${categoryId}|${q}|${a}`;
+
+/** How many cards in a category have not been played yet on this device. */
+export function unseenCount(categoryId: string, seen: readonly string[]): number {
+  const played = new Set(seen);
+  return byId(categoryId).tiers.flat().filter(([q, a]) => !played.has(cardId(categoryId, q, a))).length;
+}
 
 export function loadState(): State {
   try {
@@ -61,13 +71,21 @@ function shuffle<T>(items: readonly T[]): T[] {
   return a;
 }
 
-function buildBoard(picked: string[]): Cell[][] {
-  return picked.map((id) =>
-    byId(id).tiers.flatMap((tier, t) =>
-      shuffle(tier)
+/**
+ * Draws PER_TIER cards per tier: unplayed cards first, in random order. When a
+ * tier runs out of unplayed cards, the ones played longest ago come back first.
+ */
+function buildBoard(picked: string[], seen: readonly string[]): Cell[][] {
+  const playedAt = new Map(seen.map((id, i) => [id, i]));
+  return picked.map((catId) =>
+    byId(catId).tiers.flatMap((tier, t) => {
+      const age = ([q, a]: (typeof tier)[number]) => playedAt.get(cardId(catId, q, a));
+      const fresh = shuffle(tier.filter((card) => age(card) === undefined));
+      const replay = tier.filter((card) => age(card) !== undefined).sort((x, y) => age(x)! - age(y)!);
+      return [...fresh, ...replay]
         .slice(0, PER_TIER)
-        .map(([q, a]): Cell => ({ q, a, value: TIER_VALUES[t], done: false, by: null })),
-    ),
+        .map(([q, a, img]): Cell => ({ q, a, img, value: TIER_VALUES[t], done: false, by: null }));
+    }),
   );
 }
 
@@ -75,7 +93,11 @@ function buildBoard(picked: string[]): Cell[][] {
 function resolve(s: State, scorer: number): State {
   const { cur, board } = s;
   if (!cur || !board) return s;
-  const value = board[cur.col][cur.row].value;
+  const { value, q, a } = board[cur.col][cur.row];
+  // A card counts as played once it is resolved; cards left unplayed in an
+  // abandoned match go back into the pool.
+  const id = cardId(s.picked[cur.col], q, a);
+  const seen = [...s.seen.filter((x) => x !== id), id];
   const teams = s.teams.map((t, i) =>
     i === scorer ? { ...t, score: t.score + value } : t,
   ) as [Team, Team];
@@ -84,7 +106,7 @@ function resolve(s: State, scorer: number): State {
       c === cur.col && r === cur.row ? { ...cell, done: true, by: scorer } : cell,
     ),
   );
-  return { ...s, teams, board: next, cur: { ...cur, phase: 'done' } };
+  return { ...s, teams, board: next, seen, cur: { ...cur, phase: 'done' } };
 }
 
 export type Action =
@@ -100,6 +122,7 @@ export type Action =
   | { type: 'advance' }
   | { type: 'award'; scorer: number }
   | { type: 'close' }
+  | { type: 'resetSeen' }
   | { type: 'quit' };
 
 export function reducer(s: State, a: Action): State {
@@ -136,7 +159,7 @@ export function reducer(s: State, a: Action): State {
         name: t.name.trim() || `Team ${'AB'[i]}`,
         score: 0,
       })) as [Team, Team];
-      return { ...s, teams, board: buildBoard(s.picked), turn: 0, cur: null, screen: 'board' };
+      return { ...s, teams, board: buildBoard(s.picked, s.seen), turn: 0, cur: null, screen: 'board' };
     }
 
     case 'open': {
@@ -176,6 +199,9 @@ export function reducer(s: State, a: Action): State {
       const finished = s.board.every((col) => col.every((cell) => cell.done));
       return { ...s, cur: null, turn: 1 - s.turn, screen: finished ? 'end' : 'board' };
     }
+
+    case 'resetSeen':
+      return { ...s, seen: [] };
 
     case 'quit':
       return { ...s, board: null, cur: null, screen: 'home' };

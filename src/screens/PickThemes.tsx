@@ -1,6 +1,8 @@
 import type { ScreenProps } from '../App';
 import { CATEGORIES } from '../questions';
-import { PICK_COUNT, inProgress } from '../game';
+import { PICK_COUNT, inProgress, unseenCount } from '../game';
+
+const TOTAL_CARDS = CATEGORIES.reduce((n, c) => n + c.tiers.flat().length, 0);
 
 export default function PickThemes({ state, dispatch }: ScreenProps) {
   const count = state.picked.length;
@@ -11,6 +13,12 @@ export default function PickThemes({ state, dispatch }: ScreenProps) {
     dispatch({ type: 'start' });
   };
 
+  const resetHistory = () => {
+    if (window.confirm('Forget which cards you have played? Every card will count as new again.')) {
+      dispatch({ type: 'resetSeen' });
+    }
+  };
+
   return (
     <div className="panel wide">
       <p className="eyebrow">Step 2 of 2</p>
@@ -19,6 +27,7 @@ export default function PickThemes({ state, dispatch }: ScreenProps) {
       <div className="themes">
         {CATEGORIES.map((c) => {
           const on = state.picked.includes(c.id);
+          const fresh = unseenCount(c.id, state.seen);
           return (
             <button
               key={c.id}
@@ -29,12 +38,22 @@ export default function PickThemes({ state, dispatch }: ScreenProps) {
             >
               <span className="icon" aria-hidden>{c.icon}</span>
               {c.name}
+              <span className={`fresh ${fresh === 0 ? 'none' : ''}`}>
+                {fresh === 0 ? 'All played' : `${fresh} new`}
+              </span>
             </button>
           );
         })}
       </div>
 
       <p className="hint">{count} / {PICK_COUNT} picked</p>
+
+      {state.seen.length > 0 && (
+        <p className="hint history">
+          You've played {state.seen.length} of {TOTAL_CARDS} cards on this device. New ones are drawn first.{' '}
+          <button className="link" onClick={resetHistory}>Start fresh</button>
+        </p>
+      )}
 
       <div className="row center">
         <button className="btn ghost" onClick={() => dispatch({ type: 'go', screen: 'teams' })}>

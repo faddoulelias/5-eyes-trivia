@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { IMAGES } from '../images';
 import type { ScreenProps } from '../App';
 import { byId } from '../questions';
 import type { Team } from '../types';
@@ -52,6 +53,15 @@ export default function Board({ state, dispatch }: ScreenProps) {
   const [adjusting, setAdjusting] = useState(false);
   const board = state.board!;
   const left = board.flat().filter((c) => !c.done).length;
+
+  // Warm the browser cache so picture cards open without a loading gap.
+  useEffect(() => {
+    for (const cell of board.flat()) {
+      if (cell.img && !cell.done && IMAGES[cell.img]) new Image().src = IMAGES[cell.img].src;
+    }
+    // Only needed once per match: the set of pictures is fixed when the board is built.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.picked.join()]);
 
   const quit = () => {
     if (window.confirm('End this match? The scores will be lost.')) dispatch({ type: 'quit' });

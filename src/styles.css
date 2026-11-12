@@ -111,7 +111,7 @@ button:disabled { cursor: not-allowed; }
 .home h2 { display: inline-block; background: var(--paper); border: var(--edge); border-radius: 14px; padding: 2px 16px; box-shadow: 0 4px 0 var(--ink); }
 .steps, .formats { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
 .steps { grid-template-columns: repeat(3, 1fr); }
-.formats { grid-template-columns: repeat(4, 1fr); }
+.formats { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 .steps li, .formats li { background: var(--paper); border: var(--edge); border-radius: var(--radius); padding: 18px; box-shadow: var(--lift); }
 .steps .num {
   display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
@@ -154,6 +154,16 @@ button:disabled { cursor: not-allowed; }
 .theme.on { background: var(--yellow); transform: translateY(4px) rotate(-1.5deg); box-shadow: 0 2px 0 var(--ink); }
 .theme.on .icon { background: var(--paper); }
 .theme:disabled { opacity: 0.5; }
+.theme .fresh {
+  font-size: 0.75rem; font-weight: 600; background: var(--green); border: 2px solid var(--ink);
+  border-radius: 999px; padding: 0 8px; line-height: 1.5;
+}
+.theme .fresh.none { background: var(--cream); color: var(--muted); }
+.hint.history { max-width: 52ch; justify-self: center; }
+.link {
+  background: none; border: 0; padding: 0; font-weight: 700; color: var(--ink);
+  text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
 
 /* Scoreboard */
 .scoreboard { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -236,6 +246,15 @@ button:disabled { cursor: not-allowed; }
 .whose { justify-self: center; border: var(--edge); border-radius: 999px; padding: 4px 18px; font-weight: 700; font-size: 1.2rem; background: var(--cream); }
 .kind { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; color: var(--muted); font-weight: 700; }
 .prompt { font-size: clamp(1.5rem, 4.5vw, 2.3rem); font-weight: 700; line-height: 1.15; text-wrap: balance; padding: 8px 0; }
+.prompt.small { font-size: clamp(1.1rem, 3vw, 1.5rem); padding: 0; }
+.card-img { margin: 0; display: grid; gap: 4px; justify-items: center; }
+.card-img img {
+  display: block; max-width: 100%; max-height: min(42vh, 360px); object-fit: contain;
+  border: var(--edge); border-radius: 14px; background: var(--cream); transform: rotate(-1deg); box-shadow: var(--lift);
+}
+.card-img figcaption { font-size: 0.7rem; color: var(--muted); max-width: 100%; overflow-wrap: anywhere; margin-top: 6px; }
+.card-img figcaption a { color: inherit; }
+.img-fail { background: var(--cream); border: 3px dashed var(--ink); border-radius: 14px; padding: 24px 16px; font-weight: 600; }
 .prompt.emoji { font-size: clamp(3rem, 12vw, 5rem); letter-spacing: 0.1em; }
 .answer {
   justify-self: center; background: var(--yellow); border: var(--edge); border-radius: 16px; padding: 10px 24px;

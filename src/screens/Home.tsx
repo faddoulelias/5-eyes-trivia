@@ -4,6 +4,7 @@ import { CATEGORIES } from '../questions';
 import { PICK_COUNT, PER_TIER, TIER_VALUES, inProgress as matchInProgress } from '../game';
 
 const ROUNDS = PICK_COUNT * PER_TIER * TIER_VALUES.length;
+const CARD_COUNT = CATEGORIES.reduce((n, c) => n + c.tiers.flat().length, 0);
 
 const STEPS = [
   ['Name your teams', 'Two teams, two colours, one screen. Whoever holds it can play too: answers stay hidden.'],
@@ -57,8 +58,8 @@ export default function Home({ state, dispatch }: ScreenProps) {
       <section className="stats">
         <div><b>{CATEGORIES.length}</b><span>Themes</span></div>
         <div><b>{ROUNDS}</b><span>Rounds per match</span></div>
-        <div><b>2</b><span>Teams</span></div>
-        <div><b>4</b><span>Card formats</span></div>
+        <div><b>{CARD_COUNT}</b><span>Cards in the deck</span></div>
+        <div><b>5</b><span>Card formats</span></div>
       </section>
 
       <section>
@@ -80,6 +81,7 @@ export default function Home({ state, dispatch }: ScreenProps) {
           <li><b>💬 Open Q&amp;A</b><span>Answer out loud. No multiple choice.</span></li>
           <li><b>✍️ Finish the line</b><span>Fill in the missing word.</span></li>
           <li><b>🧩 Emoji puzzles</b><span>Name the movie from the emoji.</span></li>
+          <li><b>📸 Picture rounds</b><span>Name the flag, landmark or dish.</span></li>
           <li><b>🎭 Charades</b><span>Act it out. No words allowed.</span></li>
         </ul>
       </section>

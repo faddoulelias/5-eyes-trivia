@@ -1,14 +1,14 @@
-export type Kind = 'qa' | 'blank' | 'emoji' | 'charades';
+export type Kind = 'qa' | 'blank' | 'emoji' | 'charades' | 'picture';
 
-/** [prompt, answer] */
-export type QA = readonly [string, string];
+/** [prompt, answer, optional picture key from src/images.ts] */
+export type QA = readonly [string, string, string?];
 
 export interface Category {
   id: string;
   name: string;
   icon: string;
   kind: Kind;
-  /** easy, medium, hard — at least 2 entries each */
+  /** easy, medium, hard — 9 cards each; a match draws 2 per tier */
   tiers: readonly [readonly QA[], readonly QA[], readonly QA[]];
 }
 
@@ -21,6 +21,7 @@ export interface Team {
 export interface Cell {
   q: string;
   a: string;
+  img?: string;
   value: number;
   done: boolean;
   /** team index that scored, -1 if nobody, null while unplayed */
@@ -54,4 +55,6 @@ export interface State {
   board: Cell[][] | null;
   turn: number;
   cur: Current | null;
+  /** IDs of cards already played on this device, oldest first (see cardId). */
+  seen: string[];
 }
