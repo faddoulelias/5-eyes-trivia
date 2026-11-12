@@ -278,6 +278,51 @@ export const IMAGES: Record<string, PictureInfo> = {
     "page": "https://commons.wikimedia.org/wiki/File:Potala_Palace_HQ.jpg",
     "credit": "Lhasa Government · CC BY-SA 4.0"
   },
+  "player-messi": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg/960px-Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
+    "credit": "Bryan Berlin · CC BY-SA 4.0"
+  },
+  "player-ronaldo": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/960px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg",
+    "credit": "Bryan Berlin · CC BY-SA 4.0"
+  },
+  "player-mbappe": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg/960px-Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg",
+    "credit": "Bryan Berlin · CC BY-SA 4.0"
+  },
+  "player-neymar": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg/960px-Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg",
+    "credit": "Bryan Berlin · CC BY-SA 4.0"
+  },
+  "player-salah": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg/960px-Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg",
+    "credit": "Bryan Berlin · CC BY-SA 4.0"
+  },
+  "player-beckham": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:David_Beckham_UNICEF_(cropped2).jpg",
+    "credit": "Soccer Aid for Unicef · CC BY 3.0"
+  },
+  "player-pele": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Pele_con_brasil_(cropped).jpg",
+    "credit": "Unknown authorUnknown author · Public domain"
+  },
+  "player-zidane": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Zinedine_Zidane_by_Tasnim_03.jpg",
+    "credit": "Hadi Abyar · CC BY 4.0"
+  },
+  "player-ronaldinho": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ronaldinho_in_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Ronaldinho_in_2019.jpg",
+    "credit": "Marcos Corrêa/PR · CC BY 2.0"
+  },
   "dish-sushi": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "page": "https://commons.wikimedia.org/wiki/File:Sushi_platter.jpg",
