@@ -8,7 +8,7 @@ export interface Category {
   name: string;
   icon: string;
   kind: Kind;
-  /** easy, medium, hard — 9 cards each; a match draws 2 per tier */
+  /** easy, medium, hard — 12 cards each; a match draws 2 per tier */
   tiers: readonly [readonly QA[], readonly QA[], readonly QA[]];
 }
 
