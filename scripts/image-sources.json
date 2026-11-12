@@ -9,7 +9,7 @@
   "flag-uk": "Flag of the United Kingdom",
   "flag-italy": "Flag of Italy",
   "flag-germany": "Flag of Germany",
-  "flag-lebanon": "Flag of Lebanon",
+  "flag-china": "Flag of China",
 
   "flag-mexico": "Flag of Mexico",
   "flag-turkey": "Flag of Turkey",
@@ -58,14 +58,14 @@
   "place-alhambra": "Alhambra",
   "place-moai": "Moai",
   "place-mont-saint-michel": "Mont-Saint-Michel",
-  "place-baalbek": "Temple of Bacchus",
+  "place-meteora": "Meteora",
   "place-potala": "Potala Palace",
 
   "player-messi": "Lionel Messi",
   "player-ronaldo": "Cristiano Ronaldo",
   "player-mbappe": "Kylian Mbappé",
-  "player-neymar": "Neymar",
-  "player-salah": "Mohamed Salah",
+  "player-modric": "Luka Modrić",
+  "player-iniesta": "Andrés Iniesta",
   "player-beckham": "David Beckham",
   "player-pele": "Pelé",
   "player-zidane": "Zinedine Zidane",
@@ -73,11 +73,11 @@
 
   "dish-sushi": "Sushi",
   "dish-croissant": "Croissant",
-  "dish-falafel": "Falafel",
+  "dish-taco": "Taco",
   "dish-paella": "Paella",
   "dish-shakshouka": "Shakshouka",
   "dish-ramen": "Ramen",
-  "dish-knafeh": "Knafeh",
+  "dish-bibimbap": "Bibimbap",
   "dish-pho": "Phở",
-  "dish-mansaf": "Mansaf"
+  "dish-moussaka": "Moussaka"
 }

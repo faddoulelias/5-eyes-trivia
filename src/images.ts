@@ -48,10 +48,10 @@ export const IMAGES: Record<string, PictureInfo> = {
     "page": "https://en.wikipedia.org/wiki/File:Flag_of_Germany.svg",
     "credit": "Unknown author · PD"
   },
-  "flag-lebanon": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/960px-Flag_of_Lebanon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Lebanon.svg",
-    "credit": "Henri Pharaon · Public domain"
+  "flag-china": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/960px-Flag_of_the_People%27s_Republic_of_China.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_People%27s_Republic_of_China.svg",
+    "credit": "Zeng Liansong · Public domain"
   },
   "flag-mexico": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/960px-Flag_of_Mexico.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -268,10 +268,10 @@ export const IMAGES: Record<string, PictureInfo> = {
     "page": "https://commons.wikimedia.org/wiki/File:Mont-Saint-Michel_vu_du_ciel.jpg",
     "credit": "Amaustan · CC BY-SA 4.0"
   },
-  "place-baalbek": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Baalbek_Baccustempel.jpg/960px-Baalbek_Baccustempel.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "page": "https://commons.wikimedia.org/wiki/File:Baalbek_Baccustempel.jpg",
-    "credit": "Jan Hilgers · CC BY-SA 3.0"
+  "place-meteora": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Meteora%27s_monastery_2.jpg/960px-Meteora%27s_monastery_2.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Meteora%27s_monastery_2.jpg",
+    "credit": "Stathis floros · CC BY-SA 4.0"
   },
   "place-potala": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -293,14 +293,14 @@ export const IMAGES: Record<string, PictureInfo> = {
     "page": "https://commons.wikimedia.org/wiki/File:Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg",
     "credit": "Bryan Berlin · CC BY-SA 4.0"
   },
-  "player-neymar": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg/960px-Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "page": "https://commons.wikimedia.org/wiki/File:Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg",
+  "player-modric": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Luka_Modric_Croatia_v_Portugal_2_July_2026-055.jpg/960px-Luka_Modric_Croatia_v_Portugal_2_July_2026-055.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Luka_Modric_Croatia_v_Portugal_2_July_2026-055.jpg",
     "credit": "Bryan Berlin · CC BY-SA 4.0"
   },
-  "player-salah": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg/960px-Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "page": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg",
+  "player-iniesta": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Andr%C3%A9s_Iniesta_Argentina_v_Spain_19_July_2026-034_%28cropped%29.jpg/960px-Andr%C3%A9s_Iniesta_Argentina_v_Spain_19_July_2026-034_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9s_Iniesta_Argentina_v_Spain_19_July_2026-034_(cropped).jpg",
     "credit": "Bryan Berlin · CC BY-SA 4.0"
   },
   "player-beckham": {
@@ -333,10 +333,10 @@ export const IMAGES: Record<string, PictureInfo> = {
     "page": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
     "credit": "Petr Kratochvil · CC0"
   },
-  "dish-falafel": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "page": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
-    "credit": "Popo le Chien · CC BY-SA 3.0"
+  "dish-taco": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
+    "credit": "Larry Miller · CC BY-SA 2.0"
   },
   "dish-paella": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/960px-01_Paella_Valenciana_original.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -353,19 +353,19 @@ export const IMAGES: Record<string, PictureInfo> = {
     "page": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg",
     "credit": "Quercus acuta · CC BY-SA 4.0"
   },
-  "dish-knafeh": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C3%BCnefe.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "page": "https://commons.wikimedia.org/wiki/File:K%C3%BCnefe.jpg",
-    "credit": "elif ayse · CC BY 2.0"
+  "dish-bibimbap": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/960px-Dolsot-bibimbap.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg",
+    "credit": "Sous Chef · CC BY 2.0"
   },
   "dish-pho": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bowl_of_Meatball_pho.jpg/960px-Bowl_of_Meatball_pho.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "page": "https://commons.wikimedia.org/wiki/File:Bowl_of_Meatball_pho.jpg",
     "credit": "SerraKnightz · CC BY 4.0"
   },
-  "dish-mansaf": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mansaf%2C_the_traditional_dish_of_Jordan.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "page": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg",
-    "credit": "Jktab · CC BY-SA 4.0"
+  "dish-moussaka": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MussakasMeMelitsanesKePatates01.JPG/960px-MussakasMeMelitsanesKePatates01.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG",
+    "credit": "Robert Kindermann aka RobertK · CC BY-SA 2.5"
   }
 };
